@@ -1,0 +1,26 @@
+;; facts.edn — GLEIF LEI レコードから取り込んだ法人レベルの事実。
+;; 生成物: scripts/lei-gleif-ingest.cljs（手編集しない）。
+;; 出典 https://api.gleif.org/api/v1/lei-records/254900UG5D8YST164N14 を 2026-08-25 に GET（HTTP 200）。応答本文の sha256 を同梱。
+;; fact/conflict は blueprint.edn の既存値と食い違った key。どちらも消していない。
+[["gleif-254900ug5d8yst164n14" "company/lei" "254900UG5D8YST164N14" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "fact/source-url" "https://api.gleif.org/api/v1/lei-records/254900UG5D8YST164N14" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "fact/retrieved-at" "2026-08-25" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "fact/response-sha256" "23f0e4a96bf31656ac1529d90bfcfa54d210472b51ff90db7c95a42edd195280" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "source/dataset" "cloud-itonami-lei-gleif" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/legal-name" "XERO LIMITED" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/legal-address" "19-23 Taranaki Street, Te Aro, 6011, Wellington, NZ" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/headquarters-address" "19-23 Taranaki Street, Te Aro, 6011, Wellington, NZ" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/registered-as" "1830488" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/registration-authority" "RA000466" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/jurisdiction" "NZ" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/category" "GENERAL" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/legal-form-elf" "P2R9" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/entity-status" "ACTIVE" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/entity-creation-date" "2006-07-06T00:00:00Z" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/registration-status" "ISSUED" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/initial-registration-date" "2019-10-24T11:08:26Z" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/last-update-date" "2025-09-30T19:24:38Z" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/next-renewal-date" "2026-10-28T11:08:52Z" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/managing-lou" "5493001KJTIIGC8Y1R12" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "gleif/corroboration-level" "FULLY_CORROBORATED" 1 :add]
+ ["gleif-254900ug5d8yst164n14" "fact/conflict" ":company/jurisdiction: blueprint=\"New Zealand\" gleif=\"NZ\"" 1 :add]]
